@@ -54,7 +54,15 @@ public class Calculadora {
             int multiplicacion = a*b;
             System.out.println("El resultado de tu multiplicación es: " + multiplicacion);              
         } 
-        
+         else if (operacion == 4) 
+         {
+            System.out.println("Indique el primer valor: ");
+            a = Integer.parseInt(entrada.readLine());
+            System.out.println("Indique el segundo valor: ");
+            b = Integer.parseInt(entrada.readLine());
+            int division= a/b;
+            System.out.println("El resultado de tu división es: " + division); 
+          }
         
     }
     
