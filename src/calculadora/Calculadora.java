@@ -1,21 +1,48 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package calculadora;
 
-/**
- *
- * @author Servers
- */
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+
 public class Calculadora {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+    public static BufferedReader entrada = new BufferedReader(new InputStreamReader(System.in));
+    
+    public static void main(String[] args) throws IOException {
+       
+        int suma = 1;
+        int resta = 2;
+        int multiplicacion = 3;
+        int division = 4;
+        int operacion; 
+        int a;
+        int b;
+        int resultadosuma;
+        int resultadoresta;
+        int resultadomult;
+        int resultadodiv;
+        
+        System.out.println("Eliga el número 1 si desea hacer una suma.");
+        System.out.println("Eliga el número 2 si desea hacer una resta.");
+        System.out.println("Eliga el número 3 si desea hacer una multiplicación.");
+        System.out.println("Eliga el número 4 si desea hacer una división.");
+        
+        System.out.println("Indique la operacion que va a realizar: ");
+        operacion = Integer.parseInt(entrada.readLine());
+        
+        if( operacion==1);
+        {
+            System.out.println("Indique el primer valor: ");
+            a = Integer.parseInt(entrada.readLine());
+            System.out.println("Indique el segundo valor: ");
+            b = Integer.parseInt(entrada.readLine());
+            resultadosuma= a+b;
+            System.out.println("El resultado de tu suma es: " + resultadosuma);
+        }
+            
+            
+        
     }
     
 }
