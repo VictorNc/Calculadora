@@ -63,7 +63,14 @@ public class Calculadora {
             int division= a/b;
             System.out.println("El resultado de tu división es: " + division); 
           }
-        
+        if (operacion==0)
+        {
+            System.out.println("Esta operación no existe.");
+        }
+        else if(operacion >= 5)
+        {
+           System.out.println("Esta operación no existe."); 
+        }
     }
     
 }
