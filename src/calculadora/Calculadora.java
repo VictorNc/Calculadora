@@ -35,6 +35,7 @@ public class Calculadora {
             int suma= a+b;
             System.out.println("El resultado de tu suma es: " + suma);              
         } 
+        
         else if (operacion == 2) 
          {
             System.out.println("Indique el primer valor: ");
@@ -44,7 +45,16 @@ public class Calculadora {
             int resta= a-b;
             System.out.println("El resultado de tu resta es: " + resta); 
           }
-            
+        
+          if(operacion==3){
+            System.out.println("Indique el primer valor: ");
+            a = Integer.parseInt(entrada.readLine());
+            System.out.println("Indique el segundo valor: ");
+            b = Integer.parseInt(entrada.readLine());
+            int multiplicacion = a*b;
+            System.out.println("El resultado de tu multiplicación es: " + multiplicacion);              
+        } 
+        
         
     }
     
